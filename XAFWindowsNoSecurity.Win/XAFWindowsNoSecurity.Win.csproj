@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>ExpressApp.ico</ApplicationIcon>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!--<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>-->
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Include="DevExpress.ExpressApp.ListView" Alias="ListView" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\CSS\Button.css" />
+    <None Remove="Assets\CSS\EmailBox.css" />
+    <None Remove="Assets\CSS\FixedDialog.css" />
+    <None Remove="Assets\CSS\LoginFormLayout.css" />
+    <None Remove="Assets\CSS\PasswordBox.css" />
+    <None Remove="Assets\HTML\Button.html" />
+    <None Remove="Assets\HTML\EmailBox.html" />
+    <None Remove="Assets\HTML\FixedDialog.html" />
+    <None Remove="Assets\HTML\LoginFormLayout.html" />
+    <None Remove="Assets\HTML\PasswordBox.html" />
+    <None Remove="Assets\SVG\DataEntry\Card.svg" />
+    <None Remove="Assets\SVG\DataEntry\Customers.svg" />
+    <None Remove="Assets\SVG\DataEntry\Email.svg" />
+    <None Remove="Assets\SVG\DataEntry\Employees.svg" />
+    <None Remove="Assets\SVG\DataEntry\Key.svg" />
+    <None Remove="Assets\SVG\DataEntry\Opportunities.svg" />
+    <None Remove="Assets\SVG\DataEntry\Phone.svg" />
+    <None Remove="Assets\SVG\DataEntry\Products.svg" />
+    <None Remove="Assets\SVG\DataEntry\Sales.svg" />
+    <None Remove="Assets\SVG\DataEntry\Tasks.svg" />
+    <None Remove="Assets\SVG\DataEntry\World.svg" />
+    <None Remove="Assets\SVG\UIElements\Check.svg" />
+    <None Remove="Assets\SVG\UIElements\Close.svg" />
+    <None Remove="Assets\SVG\UIElements\Copy.svg" />
+    <None Remove="Assets\SVG\UIElements\DropDown.svg" />
+    <None Remove="Assets\SVG\UIElements\Hide.svg" />
+    <None Remove="Assets\SVG\UIElements\Info.svg" />
+    <None Remove="Assets\SVG\UIElements\Search.svg" />
+    <None Remove="Assets\SVG\UIElements\Show.svg" />
+    <None Remove="Assets\Toolbox\Button.bmp" />
+    <None Remove="Assets\Toolbox\EmailBox.bmp" />
+    <None Remove="Assets\Toolbox\PasswordBox.bmp" />
+    <None Remove="Model.xafml" />
+    <None Remove="Images\Logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.xafml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\CSS\Button.css" />
+    <EmbeddedResource Include="Assets\CSS\EmailBox.css" />
+    <EmbeddedResource Include="Assets\CSS\FixedDialog.css" />
+    <EmbeddedResource Include="Assets\CSS\LoginFormLayout.css" />
+    <EmbeddedResource Include="Assets\CSS\PasswordBox.css" />
+    <EmbeddedResource Include="Assets\HTML\Button.html" />
+    <EmbeddedResource Include="Assets\HTML\EmailBox.html" />
+    <EmbeddedResource Include="Assets\HTML\FixedDialog.html" />
+    <EmbeddedResource Include="Assets\HTML\LoginFormLayout.html" />
+    <EmbeddedResource Include="Assets\HTML\PasswordBox.html" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Card.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Customers.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Email.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Employees.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Key.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Opportunities.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Phone.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Products.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Sales.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Tasks.svg" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\World.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Check.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Close.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Copy.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\DropDown.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Hide.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Info.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Search.svg" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Show.svg" />
+    <EmbeddedResource Include="Assets\Toolbox\Button.bmp" />
+    <EmbeddedResource Include="Assets\Toolbox\EmailBox.bmp" />
+    <EmbeddedResource Include="Assets\Toolbox\PasswordBox.bmp" />
+    <EmbeddedResource Include="Images\Logo.svg" />
+    <EmbeddedResource Include="Images\ExpressAppLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation.Win" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.ExpressApp.Win" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.ExpressApp.Win.Design" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.Persistent.Base" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="23.2.4.0" />
+    <PackageReference Include="DevExpress.Win.Design" Version="23.2.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XAFWindowsNoSecurity.Module\XAFWindowsNoSecurity.Module.csproj" />
+  </ItemGroup>
+  <!--<ItemGroup>
+    <Compile Update="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="Forms\Base\FormAssets.cs" />
+    <Compile Update="Editors\Base\ButtonBase.cs" />
+    <Compile Update="Editors\Base\ButtonImageOptionsBase.cs" />
+    <EmbeddedResource Include="Assets\HTML\FixedDialog.html" />
+    <EmbeddedResource Include="Assets\CSS\FixedDialog.css" />
+    <EmbeddedResource Include="Assets\HTML\LoginFormLayout.html" />
+    <EmbeddedResource Include="Assets\CSS\LoginFormLayout.css" />
+    <Compile Update="Editors\Button.cs" />
+    <Compile Update="Assets\Toolbox\Root.cs" />
+    <EmbeddedResource Include="Assets\Toolbox\Button.bmp" />
+    <EmbeddedResource Include="Assets\HTML\Button.html" />
+    <EmbeddedResource Include="Assets\CSS\Button.css" />
+    <Compile Update="Utilities\HtmlCssAsset.cs" />
+    <Compile Update="Images\UIElements.cs" />
+    <EmbeddedResource Include="Assets\SVG\UIElements\Check.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\UIElements\Close.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\UIElements\Copy.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\UIElements\DropDown.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\UIElements\Hide.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\UIElements\Info.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\UIElements\Search.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\UIElements\Show.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Compile Update="Editors\EmailBox.cs" />
+    <EmbeddedResource Include="Assets\Toolbox\EmailBox.bmp" />
+    <EmbeddedResource Include="Assets\HTML\EmailBox.html" />
+    <EmbeddedResource Include="Assets\CSS\EmailBox.css" />
+    <Compile Update="Utilities\Email.cs" />
+    <Compile Update="Images\DataEntry.cs" />
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Card.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Customers.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Email.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Employees.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Key.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Opportunities.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Phone.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Products.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Sales.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\Tasks.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SVG\DataEntry\World.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Compile Update="Editors\PasswordBox.cs" />
+    <EmbeddedResource Include="Assets\Toolbox\PasswordBox.bmp" />
+    <EmbeddedResource Include="Assets\HTML\PasswordBox.html" />
+    <EmbeddedResource Include="Assets\CSS\PasswordBox.css" />
+    <Compile Update="Utilities\Password.cs" />
+    <Compile Update="Components\StrengthIndicator.cs" />
+    <Compile Update="Components\Base\ProgressIndicatorBase.cs" />
+  </ItemGroup>-->
+</Project>
